@@ -17,7 +17,7 @@
     "build-storybook": "build-storybook",
     "start": "npm run storybook",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "chromatic": "chromatic test --app-code='hzxfstp53iw' --runtimes=storybook:./.storybook/config.js"
+    "chromatic": "chromatic test --app-code='hzxfstp53iw' --runtimes=storybook:./.storybook/config.js --script-name=storybook --port=9000 --app-path=iframe.html"
   },
   "keywords": [
     "react",
@@ -93,7 +93,6 @@
     "flatpickr": "^3.0.7",
     "lodash.debounce": "^4.0.8",
     "react-addons-css-transition-group": "^15.4.2",
-    "react-chromatic": "^0.5.2",
     "warning": "3.0.0",
     "window-or-global": "^1.0.1"
   },
@@ -128,6 +127,7 @@
     "prettier": "^1.2.2",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
+    "react-chromatic": "^0.5.3",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.6.1",
     "requestanimationframe": "^0.0.23",
